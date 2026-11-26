@@ -1,43 +1,72 @@
 <!DOCTYPE html>
 <html lang="es">
-   <head>
-          <title>Jesús Macías Castro - Aplicaciones Web</title>
-          <meta name="description" content="Prácticas de HTML y CSS del módulo Aplicaciones Web (2º SMR) de Jesús Macías Castro" />
-          <meta name="keywords" content="HTML, CSS, Aplicaciones Web, SMR, GitHub Pages" />
-          <meta name="author" content="Jesús Macías Castro" />
-          <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <style>
-            body { font-family: Arial, Helvetica, sans-serif; background: #f4f6fa; color: #222; margin: 0; padding: 20px; }
-            header, main, footer { max-width: 800px; margin: 0 auto 20px; background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,.12); }
-            h1 { color: #1b3a6b; margin: 0 0 6px; }
-            h2 { color: #1b3a6b; border-bottom: 2px solid #4f8cff; padding-bottom: 6px; }
-            ul { line-height: 2; }
-            a:link, a:visited { color: #1b3a6b; font-weight: bold; text-decoration: none; }
-            a:hover { color: #4f8cff; text-decoration: underline; }
-            footer { text-align: center; font-size: .9rem; }
-          </style>
-  </head>
-  <body>
-     <header>
-        <h1>Jesús Macías Castro</h1>
-        <p>2º SMR · Aplicaciones Web · IES Rafael Alberti (Cádiz)</p>
-        <p>Mi GitHub: <a href="https://github.com/MaciasCJ" target="_blank" rel="noopener noreferrer">github.com/MaciasCJ</a></p>
-     </header>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jesús Macías Castro - Aplicaciones Web</title>
+  <meta name="description" content="Prácticas de HTML y CSS del módulo Aplicaciones Web (2º SMR)">
+  <meta name="author" content="Jesús Macías Castro">
+  <link rel="stylesheet" href="css/portada.css">
+</head>
+<body>
 
-     <main>
-        <h2>Tema 4: HTML y CSS</h2>
-        <ul>
-           <li><a href="tema4/ejercicio1/index.html">Práctica 1: Texto y etiquetas CSS</a></li>
-           <li><a href="tema4/ejercicio3/index.html">Práctica 2: Lista, div y class e id (Curriculum Vitae)</a></li>
-           <li><a href="tema4/ejercicio4/principal.html">Práctica 3: Enlaces, menú y clases CSS</a></li>
-           <li><a href="tema4/colocacion/index.html">Colocación de imágenes y textos con CSS3</a></li>
-        </ul>
-     </main>
+  <!-- Cabecera: nombre, curso, enlaces y botón de tema -->
+  <header class="cabecera">
+    <div class="avatar">JMC</div>
+    <div>
+      <h1>Jesús Macías Castro</h1>
+      <p>2º SMR · Aplicaciones Web · IES Rafael Alberti (Cádiz)</p>
+      <nav class="enlaces">
+        <a href="https://github.com/MaciasCJ" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://github.com/MaciasCJ/curso-de-desarrollo-de-aplicaciones-web" target="_blank" rel="noopener">Repositorio</a>
+        <a href="https://drive.google.com/drive/folders/18fQaoX19dNbCV8nsUzMpIU-JXIjYCb52?usp=drive_link" target="_blank" rel="noopener">Drive</a>
+      </nav>
+    </div>
+    <button id="tema" title="Cambiar modo claro/oscuro">🌙</button>
+  </header>
 
-     <footer>
-        <p>Correo personal: <a href="mailto:jmaccas030608@gmail.com">jmaccas030608@gmail.com</a> ·
-           Correo corporativo: <a href="mailto:jmaccas0306@g.educaand.es">jmaccas0306@g.educaand.es</a></p>
-     </footer>
-  </body>
+  <main>
+    <h2>Tema 4 · HTML y CSS</h2>
+
+    <!-- Cada práctica es una tarjeta (la rejilla se hace con CSS Grid) -->
+    <section class="tarjetas">
+      <a class="tarjeta" href="tema4/ejercicio1/index.html">
+        <span class="num">1</span>
+        <h3>Texto y etiquetas CSS</h3>
+        <p>Biografía con encabezados, negrita, cursiva e imagen de fondo.</p>
+      </a>
+      <a class="tarjeta" href="tema4/ejercicio3/index.html">
+        <span class="num">2</span>
+        <h3>Lista, div, class e id</h3>
+        <p>Currículum con capas, clases y bordes redondeados.</p>
+      </a>
+      <a class="tarjeta" href="tema4/ejercicio4/principal.html">
+        <span class="num">3</span>
+        <h3>Enlaces y menús</h3>
+        <p>Menú vertical y horizontal con estados de los enlaces.</p>
+      </a>
+      <a class="tarjeta" href="tema4/colocacion/index.html">
+        <span class="num">4</span>
+        <h3>Colocación de imágenes</h3>
+        <p>Float, Flexbox, Grid, position y diseño responsive.</p>
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <p>Correo personal: <a href="mailto:jmaccas030608@gmail.com">jmaccas030608@gmail.com</a></p>
+    <p>Correo corporativo: <a href="mailto:jmaccas0306@g.educaand.es">jmaccas0306@g.educaand.es</a></p>
+  </footer>
+
+  <script>
+    // Modo oscuro: añade/quita la clase "oscuro" en <body> y lo recuerda en el navegador
+    const boton = document.getElementById('tema');
+    if (localStorage.getItem('tema') === 'oscuro') document.body.classList.add('oscuro');
+
+    boton.onclick = () => {
+      const oscuro = document.body.classList.toggle('oscuro');
+      localStorage.setItem('tema', oscuro ? 'oscuro' : 'claro');
+    };
+  </script>
+</body>
 </html>
