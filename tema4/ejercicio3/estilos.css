@@ -1,0 +1,75 @@
+/* Ejercicio 3 (Práctica 2) - Jesús Macías Castro */
+
+/* ===== Estilos de etiqueta ===== */
+
+body {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  color: black;
+  margin: 20px;
+  background-color: #DFF5FD;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  color: #00008B;                    /* azul oscuro */
+  text-align: center;
+  background-color: white;
+  border-top: thin solid #00008B;    /* borde delgado arriba */
+  border-bottom: thin solid #00008B; /* borde delgado abajo */
+  margin: 20px auto;
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* ===== Clases ===== */
+
+.TimesRojo {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: red;
+}
+
+.TimesVerde {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: green;
+}
+
+/* ===== Capas tipo id (div) ===== */
+
+/* Datos personales */
+#recuadro {
+  background-color: #F5A9A9;
+  font-size: 14px;
+  color: #74030A;
+  font-family: Arial, Times, sans-serif;
+  border: solid 3px;
+  padding: 15px;
+  margin: 20px auto 20px auto;
+  width: 50%;                        /* porcentaje para que se adapte a la resolución */
+  border-radius: 25px;               /* borde redondeado */
+  box-shadow: 2px 2px 5px black;     /* sombra */
+}
+
+/* Formación académica */
+#formacion {
+  background-color: #A9D8F5;
+  font-size: 14px;
+  color: #0B1F5C;
+  font-family: Arial, Times, sans-serif;
+  border: dotted 3px #00008B;
+  padding: 15px;
+  margin: 20px auto 20px auto;
+  width: 50%;
+  border-radius: 25px;
+  box-shadow: 2px 2px 5px black;
+}

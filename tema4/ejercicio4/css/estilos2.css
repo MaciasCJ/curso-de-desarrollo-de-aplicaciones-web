@@ -1,0 +1,70 @@
+/* estilos2.css - Página secundaria (menú horizontal) - Jesús Macías Castro */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #F8F8C8;
+  margin: 20px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: red;
+  text-align: center;
+  background-color: black;
+  width: 80%;
+  margin: 20px auto;
+}
+
+/* Barra del menú */
+nav {
+  overflow: hidden;                 /* el alto se ajusta al contenido */
+  background-color: #D8D8D8;
+  border: solid 1px #555;
+  box-shadow: 1px 1px 3px #888;
+  padding: 0;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;                 /* menú horizontal: sin viñetas */
+  margin: 0 10px 0 10px;
+  padding: 0;
+}
+
+nav ul li {
+  float: left;                      /* menú horizontal */
+  margin-left: 4px;                 /* separación entre elementos */
+}
+
+nav a {
+  display: block;
+  padding: 8px 12px;
+}
+
+/* Línea de contacto bajo el menú */
+.contacto {
+  font-size: 13px;
+  margin-top: 15px;
+}
+
+p.contacto a {
+  text-decoration: underline;
+}
+
+/* Estados de los enlaces: SIEMPRE en este orden (link, visited, hover) */
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;                     /* mismo estilo que a:link */
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;                     /* como en la foto: blanco sobre rojo */
+  background-color: red;
+}

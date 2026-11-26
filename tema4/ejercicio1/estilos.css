@@ -1,0 +1,33 @@
+/* Ejercicio 1 - Jesús Macías Castro */
+
+/* Etiqueta body: Verdana, 12px, normal, azul oscuro y de fondo la imagen */
+body {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  color: #00008B;                              /* azul oscuro */
+  background: url("imagenes/fondo.jpg");       /* imagen de fondo (se repite como mosaico) */
+}
+
+/* Etiqueta h1: Georgia, 36px, negrita, rojo oscuro */
+h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 36px;
+  font-weight: bold;
+  color: #8B0000;                              /* rojo oscuro */
+}
+
+/* Etiqueta h2: tamaño 24px, negrita */
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/*
+  ¿Qué significan los atributos?
+  - font-size:   tamaño de la letra (aquí en píxeles: 12px, 24px, 36px).
+  - color:       color del texto (por nombre, hexadecimal #RRGGBB, rgb()...).
+  - font-weight: grosor de la letra: normal, bold (negrita) o un número de 100 a 900.
+  - background:  fondo del elemento; permite poner un color, una imagen (url(...)),
+                 cómo se repite y su posición, todo en una sola propiedad.
+*/

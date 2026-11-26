@@ -1,0 +1,17 @@
+Práctica 1 - Jesús Macías Castro
+
+¿Qué significan los atributos font-size, color, font-weight y background?
+
+- font-size: indica el tamaño de la letra. En esta práctica se usa en píxeles
+  (12px para el texto del body, 36px para el h1 y 24px para el h2).
+
+- color: indica el color del texto. Se puede escribir por nombre (darkblue),
+  en hexadecimal (#00008B) o con rgb(). Aquí el texto es azul oscuro y el h1 rojo oscuro.
+
+- font-weight: indica el grosor de la letra: normal, bold (negrita) o un valor
+  numérico de 100 a 900 (400 = normal, 700 = negrita).
+
+- background: define el fondo de un elemento. Es una propiedad abreviada que agrupa
+  el color de fondo (background-color), la imagen (background-image: url(...)),
+  cómo se repite (background-repeat) y su posición (background-position).
+  Aquí se usa para poner la imagen fondo.jpg como fondo de toda la página.

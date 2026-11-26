@@ -1,0 +1,61 @@
+/* estilos1.css - Página principal (menú vertical) - Jesús Macías Castro */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #E8E8E8;
+  margin: 20px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #00008B;
+  text-align: center;
+  background-color: white;
+  border-top: thin solid #0000CD;
+  border-bottom: thin solid #0000CD;
+  width: 80%;
+  margin: 20px auto;
+}
+
+/* Caja del menú */
+nav {
+  overflow: hidden;                 /* el alto se ajusta al contenido */
+  width: 180px;
+  background-color: #F5A9A9;
+  border: solid 3px #74030A;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px black;
+  padding: 10px 0;
+  margin: 20px 0 20px 30px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style-type: circle;          /* menú vertical */
+  /* SUBIR NOTA: los círculos se cambian por una imagen */
+  list-style-image: url("../imagenes/carpeta.gif");
+  margin: 0 10px 0 10px;            /* arriba y abajo 0: la separación la da el padding del nav */
+}
+
+nav ul li {
+  margin-top: 12px;                 /* separación entre elementos (menú vertical) */
+  margin-bottom: 12px;
+}
+
+/* Estados de los enlaces: SIEMPRE en este orden (link, visited, hover) */
+a:link {
+  color: #0000FF;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #0000FF;                   /* mismo estilo que a:link */
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;                     /* como en la foto: blanco y subrayado */
+  text-decoration: underline;
+}
